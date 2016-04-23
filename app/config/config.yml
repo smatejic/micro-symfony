@@ -1,0 +1,8 @@
+framework:
+    secret: DEMO
+    router:
+        resource: %kernel.root_dir%/config/routing.yml
+    templating:
+        engines: [twig]
+    profiler:
+        enabled: %kernel.debug%

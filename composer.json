@@ -1,0 +1,22 @@
+{
+    "name": "smatejic/micro-symfony",
+    "description": "Symfony based on Microservice Kernel",
+    "require": {
+        "symfony/symfony": "^3.0",
+        "vlucas/phpdotenv": "^2.2"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+
+    "license": "GNU/GPL",
+    "authors": [
+        {
+            "name": "Sasha Matejic",
+            "email": "smatejic@gmail.com"
+        }
+    ]
+}

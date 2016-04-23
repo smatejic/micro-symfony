@@ -1,0 +1,7 @@
+_errors:
+    resource: "@TwigBundle/Resources/config/routing/errors.xml"
+    prefix:   /_error
+
+_homepage:
+    path:      /
+    defaults:  { _controller: AppBundle:Demo:index }
