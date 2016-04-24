@@ -22,7 +22,7 @@ class DemoController implements ContainerAwareInterface
 
     public function indexAction()
     {
-        $html = $this->container->get('twig')
+        $html = $this->container->get('templating')
             ->render(
                 'app/demo/index.html.twig',
                 ['demo' => "Hey there how are you hey"]
