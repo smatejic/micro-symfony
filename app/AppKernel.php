@@ -24,11 +24,13 @@ class AppKernel extends Kernel
         $bundles = [
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
-            new AppBundle\AppBundle()
+            new AppBundle\AppBundle(),
+            new \Symfony\Bundle\MonologBundle\MonologBundle(),
         ];
 
         if ($this->getEnvironment() == 'dev') {
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
+            $bundles[] = new \Symfony\Bundle\DebugBundle\DebugBundle();
         }
 
         return $bundles;
@@ -87,6 +89,22 @@ class AppKernel extends Kernel
                 ]
             ]
         );
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getCacheDir()
+    {
+        return $this->rootDir.'/../var/cache/'.$this->environment;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getLogDir()
+    {
+        return $this->rootDir.'/../var/logs';
     }
 
 }

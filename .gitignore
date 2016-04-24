@@ -1,5 +1,4 @@
 /vendor
-/app/cache
-/app/logs
+/var
 .env
 .idea

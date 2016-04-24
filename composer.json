@@ -3,7 +3,8 @@
     "description": "Symfony based on Microservice Kernel",
     "require": {
         "symfony/symfony": "^3.0",
-        "vlucas/phpdotenv": "^2.2"
+        "vlucas/phpdotenv": "^2.2",
+        "symfony/monolog-bundle": "^2.11"
     },
 
     "autoload": {

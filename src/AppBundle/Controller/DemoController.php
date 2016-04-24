@@ -22,6 +22,12 @@ class DemoController implements ContainerAwareInterface
 
     public function indexAction()
     {
-        return new Response('<html><body>Hello</body></html>');
+        $html = $this->container->get('twig')
+            ->render(
+                'app/demo/index.html.twig',
+                ['demo' => "Hey there how are you hey"]
+            );
+
+        return new Response($html);
     }
 }
