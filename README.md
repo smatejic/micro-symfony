@@ -5,8 +5,7 @@ Silex is a micro but it is not Symfony.
 Running Symfony as micro-service is exactly what i wanted.
 
 ##Symfony implementation
-The implementation of the PostContext has been done with Symfony.
-It has been developed with a Symfony minimal distribution inspired by:
+Micro-Symfony distribution inspired by:
 - http://www.whitewashing.de/2014/10/26/symfony_all_the_things_web.html
 - https://github.com/beberlei/symfony-minimal-distribution
 
