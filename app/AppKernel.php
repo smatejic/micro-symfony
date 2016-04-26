@@ -25,7 +25,7 @@ class AppKernel extends Kernel
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new AppBundle\AppBundle(),
-            new \Symfony\Bundle\MonologBundle\MonologBundle(),
+            new Symfony\Bundle\MonologBundle\MonologBundle(),
         ];
 
         if ($this->getEnvironment() == 'dev') {

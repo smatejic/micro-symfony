@@ -19,15 +19,11 @@ class DemoController implements ContainerAwareInterface
 {
     use ContainerAwareTrait;
 
-
+    /**
+     * @return Response
+     */
     public function indexAction()
     {
-        $html = $this->container->get('templating')
-            ->render(
-                'app/demo/index.html.twig',
-                ['demo' => "Hey there how are you hey"]
-            );
-
-        return new Response($html);
+        return new Response('<htm><body>Hello</body></htm>');
     }
 }
