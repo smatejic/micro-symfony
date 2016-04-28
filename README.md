@@ -27,7 +27,7 @@ mv .env.example .env
 
 After this you can run Micro-Syfmony as usual with app/console server:run
 ```bash
-php app/console server:run
+php bin/console server:run
 ```
 To change from dev to prod just edit .env file 
 
