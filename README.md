@@ -44,3 +44,10 @@ php bin/console server:run
 ```
 To change from dev to prod just edit .env file 
 
+I also got a question about missing .env variables so please check your php.ini that it has
+variables_order = "GPCS"
+
+line to
+
+variables_order = "EGPCS"
+
