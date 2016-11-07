@@ -8,11 +8,6 @@
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Debug\Debug;
-use Symfony\Component\EventDispatcher\EventDispatcher;
-use Symfony\Component\HttpKernel\Controller\ControllerResolver;
-use Symfony\Component\HttpKernel\Controller\ArgumentResolver;
-use Symfony\Component\HttpKernel\HttpKernel;
-use Symfony\Component\HttpFoundation\RequestStack;
 
 
 umask(0000);
