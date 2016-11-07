@@ -8,6 +8,8 @@ framework:
         enabled: %kernel.debug%
     translator:
         enabled: false
+twig:
+    autoescape: "name"
 
 monolog:
     handlers:
